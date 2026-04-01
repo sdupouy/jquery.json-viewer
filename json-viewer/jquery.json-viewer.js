@@ -1,7 +1,7 @@
 /**
  * jQuery json-viewer
- * @author: Alexandre Bodelot <alexandre.bodelot@gmail.com>
- * @link: https://github.com/abodelot/jquery.json-viewer
+ * @author: Alexandre Bodelot <alexandre.bodelot@gmail.com>, forked by Simon Dupouy
+ * @link: https://github.com/sdupouy/jquery.json-viewer
  */
 (function($) {
 
