@@ -1,9 +1,4 @@
-# jQuery json-viewer
-
-![npm](https://img.shields.io/npm/v/jquery.json-viewer.svg)
-![npm](https://img.shields.io/npm/l/jquery.json-viewer.svg)
-![npm](https://img.shields.io/npm/dt/jquery.json-viewer.svg)
-![workflow](https://github.com/abodelot/jquery.json-viewer/actions/workflows/node.js.yml/badge.svg)
+# jQuery json-viewer - fork with copyToClipboard option
 
 *json-viewer* is a jQuery plugin for easily displaying JSON objects by transforming them into HTML.
 
@@ -13,27 +8,11 @@ Features:
 - Clickable links
 - Easily readable and minimal DOM structure
 - Optional support for libraries supporting big numbers
-
-Check out the [demo page](https://abodelot.github.io/jquery.json-viewer/demo.html)!
+- Copy-to-clipboard functionality
 
 ## Install
 
-With npm:
-
-```sh
-npm install jquery.json-viewer
-```
-
-Make sure jQuery is already included. Then import `jquery.json-viewer.js` and `jquery.json-viewer.css` in your HTML document:
-
-```html
-<head>
-  <script src="node_modules/jquery.json-viewer/json-viewer/jquery.json-viewer.js"></script>
-  <link href="node_modules/jquery.json-viewer/json-viewer/jquery.json-viewer.css" type="text/css" rel="stylesheet">
-</head>
-```
-
-You can also simply copy `json-viewer/jquery.json-viewer.js` and `json-viewer/jquery.json-viewer.css` files from this git repository into your project.
+Simply copy `json-viewer/jquery.json-viewer.js` and `json-viewer/jquery.json-viewer.css` files from this git repository into your project.
 
 ## Usage
 
@@ -59,6 +38,7 @@ The `jsonViewer` method accepts an optional config object as a second argument. 
 - `withQuotes` (boolean, default: `false`): all JSON keys are surrounded with double quotation marks (`{"foobar": 1}` instead of `{foobar: 1}`).
 - `withLinks` (boolean, default: `true`): all values that are valid links will be clickable, if `false` they will only be strings.
 - `bigNumbers` (boolean, default: `false`): support different libraries for big numbers, if `true` display the real number only, `false` shows object containing big number with all fields instead of number only.
+- `copyToClipboard` (boolean, default: `false`): add a per-node copy button to copy values without changing the default viewer layout.
 
 Example:
 
@@ -105,6 +85,5 @@ The following libraries are supported:
 
 ## About
 
-- Author: [Alexandre Bodelot](https://github.com/abodelot)
+- Authors: [Alexandre Bodelot](https://github.com/abodelot), forked by [Simon Dupouy](https://github.com/sdupouy) to add the `copyToClipboard` option.
 - License: [MIT License](http://opensource.org/licenses/MIT)
-

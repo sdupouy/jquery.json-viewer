@@ -40,7 +40,8 @@ $(function() {
       collapsed: $('#collapsed').is(':checked'),
       rootCollapsable: $('#root-collapsable').is(':checked'),
       withQuotes: $('#with-quotes').is(':checked'),
-      withLinks: $('#with-links').is(':checked')
+      withLinks: $('#with-links').is(':checked'),
+      copyToClipboard: $('#copy-to-clipboard').is(':checked')
     };
     $('#json-renderer').jsonViewer(input, options);
   }
@@ -96,6 +97,9 @@ $(function() {
       <label title="Generate anchor tags for URL values">
         <input type="checkbox" id="with-links" checked>
         With Links
+      </label>
+      <label title="Show a copy button for each node">
+        <input type="checkbox" id="copy-to-clipboard">Copy to clipboard
       </label>
     </p>
     <button id="btn-json-viewer" title="run jsonViewer()">Transform to HTML</button>
